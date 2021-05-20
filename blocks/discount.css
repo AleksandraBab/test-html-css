@@ -1,0 +1,251 @@
+.discount {
+    width: calc(100% - 128px);
+    max-width: 1300px;
+    margin: auto;
+}
+
+.discount__container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1300px;
+    margin: 110px auto 0;
+}
+
+.discount__heading {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    font-family: 'Rubik', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 57px;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto 85px;
+}
+
+.discount__subheading {
+    text-transform: uppercase;
+    font-family: 'Rubik', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 57px;
+    color: #FCB500;
+    text-align: center;
+    margin: 0;
+}
+
+.discount__price {
+    display: flex;
+    align-items: center;
+    margin: 0 auto 59px;
+}
+
+.discount__oldprice {
+    font-family: 'Rubik', Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    line-height: 43px;
+    color: #ADADAD;
+    text-decoration: line-through;
+    margin: 0 32px 0 0;
+}
+
+.discount__newprice {
+    font-family: 'Rubik', Arial, Helvetica, sans-serif;
+    font-size: 48px;
+    line-height: 57px;
+    color: #fff;
+    margin: 0;
+}
+
+.discount__content {
+    margin: 0 auto 64px;
+    display: grid;
+    grid-template-columns: minmax(130px, 1fr) minmax(280px, 480px) minmax(130px, 1fr);
+    gap: 111px;
+}
+
+
+.discount__img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.discount__caption {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Rubik', Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    color: #fff;
+    text-align: center;
+    margin: 78px 0 0 0;
+} 
+
+.discount__span {
+    font-family: 'Rubik', Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FCB500;
+    text-align: center;
+    margin: 0;
+}
+
+.discount__caption_size_big {
+    font-family: 'Rubik', Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    line-height: 43px;
+    color: #fff;
+    text-align: center;
+    margin: 45px 0 8px 0;
+}
+
+.discount__span_size_big {
+    text-transform: uppercase;
+    font-family: 'Rubik', Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FCB500;
+    text-align: center;
+    margin: 0 0 24px 0;
+}
+
+.discount__btn {
+    font-family: 'Rubik', Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000;
+    text-align: center;
+    margin: 0 auto 112px;
+    background-color: #FCB500;
+    width: 256px;
+    padding: 16px 32px;
+    border-radius: 7px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1430px) {   
+    .discount__content {
+        gap: 80px;
+    }
+}
+
+
+@media screen and (max-width: 1024px) { 
+    .discount {
+        width: calc(100% - 70px);
+    }
+    
+    .discount__heading {
+        font-size: 36px;
+        line-height: 47px;
+        margin: 0 auto 65px;
+    }
+    
+    .discount__subheading {
+        font-size: 36px;
+        line-height: 47px;
+    }
+
+    .discount__oldprice {
+        font-size: 32px;
+        line-height: 39px;
+    }
+    
+    .discount__newprice {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .discount__content {
+        gap: 50px;
+    }
+
+    .discount__caption_size_big {
+        font-size: 32px;
+        line-height: 38px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .discount__span_size_big {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {   
+    .discount__content {
+        grid-template-columns: minmax(110px, 1fr) minmax(200px, 480px) minmax(110px, 1fr);
+        gap: 40px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .discount {
+        width: calc(100% - 40px);
+    }
+
+    .discount__content {
+        grid-template-rows: 1fr max-content 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .discount__heading {
+        font-size: 30px;
+        line-height: 33px;
+        margin-bottom:55px;
+    }
+
+    .discount__subheading {
+        font-size: 30px;
+        line-height: 33px;
+    }
+
+    .discount__price {
+        margin-bottom: 50px;
+    }
+
+    .discount__oldprice {
+        font-size: 28px;
+    }
+
+    .discount__newprice {
+        font-size: 36px;
+    }
+
+    .discount__block {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .discount__img {
+        width: 75%;
+    }
+
+    .discount__img_size_big {
+        width: 100%;
+    }
+
+    .discount__caption {
+        margin-top: 10px;
+    }
+
+    .discount__caption_size_big {
+        font-size: 26px;
+        line-height: 32px;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+
+    .discount__span_size_big {
+        margin-bottom: 0;
+    }
+
+    .discount__btn {
+        width: 100%;
+    }
+}

@@ -1,0 +1,31 @@
+.logo {
+    text-decoration: none;
+    width: 130px;
+    height: 34.5px;
+}
+
+.logo_place_header {
+    margin-right: 104px;
+}
+
+.logo__img {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/logo.svg);
+    background-repeat: no-repeat;
+    background-size: 130px 34.5px;
+}
+
+@media screen and (max-width: 1430px) {   
+    .logo_place_header {
+        margin-right: 50px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .logo_place_header {
+        position: relative;
+        left: -4px;
+        margin-bottom: 18px;
+    }
+}

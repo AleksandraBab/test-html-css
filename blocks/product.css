@@ -1,0 +1,234 @@
+.product {
+    background-color: #FCDA28;
+    width: 100%;
+}
+
+.product__headerback {
+    background-image: url(../images/bckg-h.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 26px;
+    background-position: bottom center;
+}
+
+.product__container {
+    width: calc(100% - 128px);
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 69px 0 96px;
+    position: relative;
+}
+
+.product__background {
+    position: absolute;
+    top: 16px;
+    right: 0;
+    z-index: 1;
+    width: 750px;
+    height: auto;
+}
+
+.product__heading {
+    text-transform: uppercase;
+    font-family: 'Rubik', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 144px;
+    line-height: 1.06;
+    color: #fff;
+    max-width: 1008px;
+    margin: 0 0 24px 0;
+    z-index: 2;
+}
+ 
+.product__caption {
+    font-family: 'Rubik', Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000;
+    max-width: 672px;   
+    margin: 0 0 120px 0;
+    z-index: 2;
+}
+
+.product__help {
+    font-family: 'Rubik', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 43px;
+    color: #000;
+    max-width: 416px;
+    margin: 0 0 16px 0;
+    z-index: 2;
+}
+
+.product__help-how {
+    font-family: 'Rubik', Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000;
+    max-width: 416px;
+    margin: 0;
+    z-index: 2;
+}
+
+@media screen and (max-width: 1430px) {   
+    .product__container {
+        padding-top: 50px;
+        padding-bottom: 70px;
+    }
+    
+    .product__background {
+        position: absolute;
+        top: 30px;
+        z-index: 1;
+        width: 600px;
+        height: auto;
+    }
+    
+    .product__heading {
+        font-size: 100px;
+        margin: 0 0 24px 0;
+    }
+}
+
+@media screen and (max-width: 1024px) { 
+    .product__container {
+        width: calc(100% - 70px);
+    }
+
+    .product__background {
+        top: 62px;
+        width: 500px;
+    }
+    
+    .product__heading {
+        font-size: 80px;
+    }
+
+    .product__caption {
+        font-size: 22px;
+        line-height: 26px;
+        max-width: 540px;   
+        margin-bottom: 100px;
+    }
+    
+    .product__help {
+        font-size: 32px;
+        line-height: 39px;
+        max-width: 416px;
+    }
+    
+    .product__help-how {
+        font-size: 18px;
+        line-height: 21px;
+        max-width: 416px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .product__container {
+        padding-top: 40px;
+        padding-bottom: 60px;
+    }
+
+    .product__background {
+        top: 58px;
+        width: 453px;
+        right: -24px;
+    }
+
+    .product__heading {
+        font-size: 72px;
+    }
+
+    .product__caption {
+        font-size: 20px;
+        line-height: 24px;
+        max-width: 520px;
+        margin-bottom: 85px;
+    }
+    
+    .product__help {
+        font-size: 30px;
+        line-height: 37px;
+    }
+    
+    .product__help-how {
+        max-width: 330px;
+    }
+
+    .discount__btn {
+        margin-bottom: 70px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .product__background {
+        top: 268px;
+        width: 296px;
+        right: 0px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .product__container {
+        width: calc(100% - 40px);
+    }
+
+    .product__background {
+        top: 211px;
+        width: 234px;
+        right: -11px;
+    }
+
+    .product__heading {
+        font-size: 40px;
+    }
+
+    .product__caption {
+        font-size: 16px;
+        line-height: 20px;
+        max-width: 400px;
+        margin-bottom: 55px;
+    }
+
+    .product__help {
+        font-size: 24px;
+        line-height: 30px;
+        max-width: 220px;
+    }
+
+    .product__help-how {
+        max-width: 305px;
+        line-height: 19px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .product__background {
+        top: 259px;
+    }
+
+    .product__help-how {
+        max-width: 229px;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .product__background {
+        display: none;
+    }
+
+    .product__help {
+        max-width: 300px;
+    }
+
+    .product__help-how {
+        max-width: 300px;
+    }
+}

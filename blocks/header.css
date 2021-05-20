@@ -1,0 +1,144 @@
+.header {
+    width: calc(100% - 128px);
+    max-width: 1300px;
+    margin: auto;
+    padding: 23px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__navigation {
+    display: flex;
+}
+
+.header__menu {
+    margin-right: 40px;
+}
+
+.header__menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__menu-item {
+    padding: 0;
+    margin: 0 40px 0 0;
+}
+
+.header__menu-item:last-of-type {
+    margin-right: 0;
+}
+
+.header__link {
+    text-decoration: none;
+    font-family: 'Rubik', Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    color: #fff;
+}
+
+.header__connection {
+    display: flex;
+}
+
+.header__link_place_connect {
+    margin-right: 40px;
+}
+
+.header__busket {
+    background-image: url(../images/busket.svg);
+    width: 32px;
+    height: 28px;
+    background-repeat: no-repeat;
+    background-size: 32px 28px;
+    text-decoration: none;
+    position: relative;
+}
+
+.header__round {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #FCB500;
+    position: absolute;
+    right: -6px;
+    bottom: -8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__count {
+    font-family: 'Rubik', Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 24px;
+    color: #000;
+}
+
+@media screen and (max-width: 1430px) {   
+    .header__menu {
+        margin-right: 15px;
+    }
+
+    .header__menu-item {
+        margin-right: 30px;
+    }
+
+    .header__menu-link {
+        font-size: 16px;
+        line-height: 22px;
+    }  
+}
+
+@media screen and (max-width: 1300px) {  
+    .header {
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: calc(100% - 70px);
+    }
+    
+    .header__navigation {
+        flex-direction: column;
+    }
+    
+    .header__menu {
+        margin-bottom: 15px;
+    }
+
+    .header__busket {
+        margin-left: auto;
+    }
+}
+
+
+@media screen and (max-width: 768px) {   
+    .header__menu-list {
+        flex-direction: column;
+    }
+
+    .header__connection {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .header {
+        width: calc(100% - 40px);
+        flex-direction: column;
+        padding: 15px 0;
+    }
+
+    .header__link {
+        font-size: 16px;
+        line-height: 21px;
+    }
+
+    .header__busket {
+        margin-left: 0;
+        margin-top: 8px;
+    }
+}
